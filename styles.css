@@ -93,6 +93,7 @@ nav {
   max-width: var(--max-width);
   margin: auto;
   z-index: 9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .nav__bar {
@@ -107,6 +108,12 @@ nav {
 .nav__logo {
   padding: 9px 12px;
   font-size: 1.2rem;
+}
+
+.nav__bar a:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0c9"; /* fa-bars */
+  margin-right: 10px;
 }
 
 .nav__bar a {
@@ -154,6 +161,9 @@ nav {
 }
 
 .header__container {
+  background-image: var(--gradient-1);
+  background-size: 400px 400px;
+  background-position: center;
   padding-top: 8rem;
   display: grid;
   gap: 2rem;
@@ -180,6 +190,11 @@ nav {
   z-index: -1;
 }
 
+.header__image img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
 .header__image img {
   max-width: 450px;
   margin-inline: auto;
@@ -199,6 +214,15 @@ nav {
 .about__container {
   display: grid;
   gap: 2rem;
+}
+
+.about__container {
+  background-image: url("https://www.transparenttextures.com/patterns/gray-linen.png");
+  background-size: 400px 400px;
+  background-position: center;
+  display: grid;
+  gap: 2rem;
+  align-items: center;
 }
 
 .about__image {
